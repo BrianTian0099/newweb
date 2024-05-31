@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.navbar{
+    top: 0px;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    background-color: lightgrey;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.navbar.button{
+    justify-content: right;
+}
+
+.navbar-menu{
+display: flex;
+gap: 25px
+;
+}
+
+nav{
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+}
+
+a{
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.navbar-brand{
+    font-family: 'Jakarta', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+    color: rgb(48, 48, 48);
+    padding: 10px;
+    font-size: 50px;
+    margin-left: 60px;
+    margin-right: 70px;
+
+}
+
+.navbar-all {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navbar-item{
+    display: flex;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    margin-right: 20px;
+    color: black; /* Add this line to make text visible */
+}
+
+.button{
+    margin-left: 10px;
+    gap: 15px;
+    margin-left: auto;
+    margin-right: 50px;
+    justify-content: right;
+    border-color: none;
+    border: 0px;
+}
+
+.button-btn{
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.d-flex{
+    padding: 10px;
+    border-radius: 15px;
+margin-right: 50px;
+}

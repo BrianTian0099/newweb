@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" id="navbar">
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Bootstrap樣式器/css/bootstrap.css">
+
+    <script src="../bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="../navstyle.css">
+    <link rel="stylesheet" href="../共用style/css.css">
+    <title>Document</title>
+    <style>
+        .carousel {
+            height: 550px;
+            overflow: hidden;
+            object-fit: cover;
+            margin: 15px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+        <a class="navbar-brand" href="#">ASD</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Product</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Price</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About us</a>
+                </li>
+            </ul>
+            <div class="d-flex">
+                <button class="btn btn-outline-success me-2" type="button">Start</button>
+                <button class="btn btn-outline-primary" type="button">Log in</button>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <footer>
+        <div><h3 class="CT">Copyright by BrianTian</h3></div>
+    </footer>
+
+
+
+    <!-- =========================================================================================== -->
+    <script>
+        let lastScrollTop = 0;
+        const navbar = document.getElementById('navbar');
+
+        window.addEventListener('scroll', function () {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop) {
+                // Downscroll
+                navbar.style.top = '-60px'; // Adjust this value based on the height of your navbar
+            } else {
+                // Upscroll
+                navbar.style.top = '0';
+            }
+            lastScrollTop = scrollTop;
+        });
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
